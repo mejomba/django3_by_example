@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ثبت نام
+{% endblock title %}
+
+{% block content %}
+<h4>حساب کاربری {{ new_user.username }} ایجاد شد</h4>
+<h5>میتوانید <a href="{% url 'login' %}">وارد شوید</a></h5>
+{% endblock content %}

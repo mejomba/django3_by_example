@@ -7,4 +7,9 @@
     {{ form.as_p }}
     <input type="submit" value="Login"></input>
 </form>
+<li class="google">
+    {% comment %} <a href="{% url 'social:begin' 'google-oauth2' %}">ورود با خساب گوگل</a> {% endcomment %}
+    <a href="{% url "social:begin" "google-oauth2" %}">Google+</a>
+
+</li>
 {% endblock %}
